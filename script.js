@@ -1,3 +1,10 @@
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("loader").classList.add("hidden");
+    document.body.classList.remove("loading");
+  }, 1600);
+});
+
 // Nav background on scroll
 const nav = document.querySelector("nav");
 const onScroll = () => {
