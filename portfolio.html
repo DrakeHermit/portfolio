@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jan — Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="styles.css" defer />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <nav>
+      <a href="#" class="nav-logo">J<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#philosophy">Ethos</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-grid-bg"></div>
+      <div class="hero-kanji" aria-hidden="true">鍛錬</div>
+
+      <div class="hero-spacer"></div>
+
+      <div class="hero-label reveal stagger-1">
+        Web Developer — Bratislava, SK
+      </div>
+
+      <h1 class="hero-name reveal stagger-2">
+        Building from<br />the <em>factory floor.</em>
+      </h1>
+
+      <p class="hero-subtitle reveal stagger-3">
+        Full-stack developer forged through 5 years of industrial discipline. I
+        build things that help people — with the same precision I bring to
+        assembly lines and the dojo.
+      </p>
+
+      <div class="hero-meta reveal stagger-4">
+        <span><span class="dot"></span> React / Next.js / TypeScript</span>
+        <span><span class="dot"></span> Kyokushin Karate · 10th Kyu</span>
+        <span><span class="dot"></span> EN · SK · SR</span>
+      </div>
+
+      <div class="hero-bottom-spacer"></div>
+
+      <div class="scroll-indicator">
+        <div class="line"></div>
+        scroll
+      </div>
+    </section>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section id="about">
+      <div class="section-header reveal">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About</h2>
+        <div class="section-line"></div>
+        <span class="section-jp">自己紹介</span>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p class="reveal stagger-1">
+            I'm an <strong>Anlagenführer at Volkswagen Bratislava</strong> —
+            operating KUKA robots and running assembly lines on rotating shifts.
+            For nearly five years, the factory floor has been my classroom in
+            discipline, systems-thinking, and precision under pressure.
+          </p>
+          <p class="reveal stagger-2">
+            In parallel, I've spent
+            <strong>3+ years self-teaching web development</strong>: from
+            HTML/CSS fundamentals through JavaScript to full-stack React and
+            Node.js applications. I study during morning commutes, code between
+            shifts, and mentally architect during physical labor.
+          </p>
+          <p class="reveal stagger-3">
+            I believe in <strong>systems over motivation</strong>. My path from
+            a factory operator to a developer isn't a leap — it's a deliberate,
+            disciplined build. Every project I ship is a step toward my goal:
+            creating tools and platforms that genuinely improve people's lives.
+          </p>
+          <p class="reveal stagger-4">
+            Outside of code, I train <strong>Kyokushin karate</strong> and work
+            toward continuous self-improvement across physical, cognitive, and
+            technical dimensions. I also completed
+            <strong>Harvard's CS50</strong> for deeper computer science
+            foundations.
+          </p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card reveal stagger-1">
+            <div class="stat-value">3+</div>
+            <div class="stat-label">Years Learning Dev</div>
+          </div>
+          <div class="stat-card reveal stagger-2">
+            <div class="stat-value">~5</div>
+            <div class="stat-label">Years in Industry</div>
+          </div>
+          <div class="stat-card reveal stagger-3">
+            <div class="stat-value">3</div>
+            <div class="stat-label">Languages Spoken</div>
+          </div>
+          <div class="stat-card reveal stagger-4">
+            <div class="stat-value">CS50</div>
+            <div class="stat-label">Harvard Certified</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section id="projects">
+      <div class="section-header reveal">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+        <span class="section-jp">作品集</span>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: CineVault -->
+        <div class="project-card reveal stagger-1">
+          <div class="project-index">01</div>
+          <div class="project-body">
+            <div class="project-type">Full-Stack Web App</div>
+            <h3>CineVault</h3>
+            <p>
+              A movie discovery platform built with Next.js, featuring TMDB API
+              integration, PostgreSQL with Drizzle ORM, server components and
+              actions, optimistic UI updates, bookmarking, and search
+              implemented through the URL-as-state pattern. MVP-ready.
+            </p>
+            <div class="project-tags">
+              <span>Next.js</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>PostgreSQL</span>
+              <span>Drizzle ORM</span>
+              <span>Server Components</span>
+              <span>TMDB API</span>
+            </div>
+          </div>
+          <div class="project-status live">Complete</div>
+        </div>
+
+        <!-- Project 2: Memory Game -->
+        <div class="project-card reveal stagger-2">
+          <div class="project-index">02</div>
+          <div class="project-body">
+            <div class="project-type">Real-Time Multiplayer</div>
+            <h3>Multiplayer Memory Game</h3>
+            <p>
+              A real-time multiplayer memory card game featuring
+              server-authoritative game state, persistent player IDs decoupled
+              from socket IDs for seamless reconnection, lobby/room management,
+              and turn-based game logic. Dockerized backend. ~6 months of
+              development alongside factory shifts.
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Express</span>
+              <span>Socket.IO</span>
+              <span>Docker</span>
+              <span>WebSockets</span>
+            </div>
+          </div>
+          <div class="project-status live">Complete</div>
+        </div>
+
+        <!-- Project 3: Capstone -->
+        <div class="project-card reveal stagger-3">
+          <div class="project-index">03</div>
+          <div class="project-body">
+            <div class="project-type">Capstone — Social Platform</div>
+            <h3>Accountability & Community Hub</h3>
+            <p>
+              A social platform with real-time chat, accountability partners,
+              progress tracking, community groups, and content moderation.
+              Currently in schema design and real-time architecture planning.
+              The capstone project before entering the job market.
+            </p>
+            <div class="project-tags">
+              <span>Next.js</span>
+              <span>Real-Time</span>
+              <span>PostgreSQL</span>
+              <span>Auth</span>
+              <span>Moderation</span>
+              <span>WebSockets</span>
+            </div>
+          </div>
+          <div class="project-status wip">In Progress</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ TECH STACK ═══════════════ -->
+    <section id="stack">
+      <div class="section-header reveal">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Stack</h2>
+        <div class="section-line"></div>
+        <span class="section-jp">技術</span>
+      </div>
+
+      <div class="stack-layout reveal">
+        <div class="stack-group">
+          <div class="stack-group-label">Frontend</div>
+          <div class="stack-items">
+            <div class="stack-item">React</div>
+            <div class="stack-item">Next.js</div>
+            <div class="stack-item">TypeScript</div>
+            <div class="stack-item">HTML / CSS</div>
+            <div class="stack-item">Zustand</div>
+            <div class="stack-item">Server Components</div>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Backend</div>
+          <div class="stack-items">
+            <div class="stack-item">Node.js</div>
+            <div class="stack-item">Express</div>
+            <div class="stack-item">Socket.IO</div>
+            <div class="stack-item">Server Actions</div>
+            <div class="stack-item">REST APIs</div>
+            <div class="stack-item">Docker</div>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Data & Tools</div>
+          <div class="stack-items">
+            <div class="stack-item">PostgreSQL</div>
+            <div class="stack-item">Drizzle ORM</div>
+            <div class="stack-item">Git / GitHub</div>
+            <div class="stack-item">C (CS50)</div>
+            <div class="stack-item">Linux / CLI</div>
+            <div class="stack-item">DSA Foundations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ PHILOSOPHY ═══════════════ -->
+    <section id="philosophy">
+      <div class="section-header reveal">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Ethos</h2>
+        <div class="section-line"></div>
+        <span class="section-jp">信念</span>
+      </div>
+
+      <div class="philosophy-grid">
+        <div class="philosophy-card reveal stagger-1">
+          <div class="card-icon">鍛</div>
+          <h3>Forged in Discipline</h3>
+          <p>
+            Five years of rotating factory shifts taught me what motivation
+            can't: systems, consistency, and executing when conditions are
+            imperfect. I build the same way — one deliberate rep at a time.
+          </p>
+        </div>
+        <div class="philosophy-card reveal stagger-2">
+          <div class="card-icon">道</div>
+          <h3>The Long Path</h3>
+          <p>
+            A developer role isn't the end goal — it's the vehicle. I want to
+            build tools that genuinely help people. Every line of code is a step
+            on that path, not a destination.
+          </p>
+        </div>
+        <div class="philosophy-card reveal stagger-3">
+          <div class="card-icon">型</div>
+          <h3>Kata in Code</h3>
+          <p>
+            In Kyokushin, we practice kata — precise forms repeated until they
+            become instinct. I approach programming the same way: deep
+            understanding of patterns over surface-level syntax.
+          </p>
+        </div>
+        <div class="philosophy-card reveal stagger-4">
+          <div class="card-icon">心</div>
+          <h3>Build With Heart</h3>
+          <p>
+            Technology without empathy is noise. I care about the people using
+            what I build. Accessibility, clarity, and genuine usefulness matter
+            more than technical vanity.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section class="contact-section" id="contact">
+      <div class="hero-kanji" aria-hidden="true">連絡</div>
+
+      <div class="section-header reveal" style="justify-content: center;">
+        <span class="section-number">05</span>
+      </div>
+
+      <h2 class="contact-cta reveal stagger-1">
+        Let's build<br />something <em>real.</em>
+      </h2>
+
+      <p class="contact-sub reveal stagger-2">
+        Available for frontend and full-stack roles in the Bratislava area from
+        mid-2026. Open to in-office positions where I can learn from experienced
+        developers.
+      </p>
+
+      <div class="contact-links reveal stagger-3">
+        <a href="mailto:your@email.com" class="contact-link"
+          ><span>Email</span></a
+        >
+        <a href="https://github.com/" class="contact-link" target="_blank"
+          ><span>GitHub</span></a
+        >
+        <a href="https://linkedin.com/" class="contact-link" target="_blank"
+          ><span>LinkedIn</span></a
+        >
+      </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer>
+      <span>© 2026 Jan</span>
+      <span class="footer-jp">一歩一歩</span>
+      <span>Bratislava, Slovakia</span>
+    </footer>
+  </body>
+</html>
